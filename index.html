@@ -20,10 +20,47 @@
 		rel="stylesheet"
 		href="node_modules/boxicons/css/boxicons.min.css"
 	>
+	<script
+		src="script.js"
+		defer
+	></script>
 	<title>Gravity</title>
 </head>
 
 <body>
+	<aside class="p-3">
+		<i class="bx bx-chevron-right-circle hide-btn"></i>
+		<h1 class="text-center pt-5">Login</h1>
+		<form class="p-3">
+			<div class="form-group">
+				<label for="exampleInputEmail1">Email address</label>
+				<input
+					type="email"
+					class="form-control"
+					id="exampleInputEmail1"
+					aria-describedby="emailHelp"
+					placeholder="Enter email"
+				>
+				<small
+					id="emailHelp"
+					class="form-text text-muted"
+				>We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<label for="exampleInputPassword1">Password</label>
+				<input
+					type="password"
+					class="form-control"
+					id="exampleInputPassword1"
+					placeholder="Password"
+				>
+			</div>
+			<button
+				type="submit"
+				class="btn btn-secondary"
+			>Submit</button>
+		</form>
+	</aside>
 	<div id="main-page">
 		<div class="deer"></div>
 		<div class="background-filter position-absolute">
@@ -71,6 +108,7 @@
 								<li class="nav-item nav px-3 login">
 									<a
 										class="nav-link"
+										id="login"
 										href="#"
 									>Login</a>
 								</li>
@@ -98,12 +136,10 @@
 		<div class="container py-5">
 			<h1 class="text-light">Choose your <br>Adventure</h1>
 			<hr>
-			<p class="small">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
-				laudantium, totam
-				rem aperiam,
-				eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
-				enim ipsam
-				voluptatem quia voluptas sit aspernatur aut odit aut fugit.</p>
+			<p class="small">Twenty years from now you will be more disappointed by the things you didn’t do than by the
+				ones you did do. So throw
+				off the bowlines. Sail away from the safe harbor. Catch the trade winds in your sails. Explore. Dream.
+				Discover.</p>
 			<div class="cards d-flex align-items-center">
 				<div class="card d-flex flex-column align-items-center p-3 mr-5">
 					<div class="slide-number"><span class="h2 text-primary">01</span><small

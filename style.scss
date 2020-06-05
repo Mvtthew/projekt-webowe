@@ -13,6 +13,14 @@
 		font-family: "Chivo";
 		.login {
 			border: 1px solid rgba(161, 161, 161, 0.397);
+			&:hover {
+				border-color: rgb(212, 212, 212);
+				cursor: pointer;
+
+				a {
+					color: rgb(212, 212, 212);
+				}
+			}
 		}
 	}
 	.background-filter {
@@ -121,5 +129,41 @@
 				margin-bottom: 1rem;
 			}
 		}
+	}
+}
+
+aside {
+	width: 36%;
+	height: 100vh;
+	font-family: "Titillium Web";
+	position: fixed;
+	right: -36%;
+	top: 0;
+	z-index: 5000;
+	background-color: rgb(226, 226, 226);
+	transition: 0.5s all ease;
+	&.show {
+		right: 0;
+	}
+	i {
+		font-size: 2rem;
+		color: rgb(80, 80, 80);
+	}
+	h1 {
+		color: #1e1028;
+	}
+	input {
+		border: none;
+		border-bottom: 1px solid grey;
+		background-color: transparent;
+		border-radius: 0;
+	}
+	.form-control:focus {
+		box-shadow: unset !important;
+		border-bottom: 2px solid rgb(5, 179, 49);
+	}
+
+	.hide-btn {
+		cursor: pointer;
 	}
 }
